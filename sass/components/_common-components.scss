@@ -1,0 +1,111 @@
+// Контейнер
+.container {
+	width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Логотип
+.logo {
+	font-family: $secondary-font;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+	letter-spacing: 0.03em;
+	color: $accent-cl;
+}
+
+// Кнопка
+.button {
+	display: block;
+	min-width: 200px;
+	min-height: 50px;
+
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.88;
+	letter-spacing: 0.06em;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	color: $wight-txt-cl;
+	background-color: $accent-cl;
+	user-select: none;
+
+	transition: background-color $transition;
+
+	&:hover,
+	&:focus {
+		background-color: #188CE8;
+	}
+}
+
+// Підзаголовки
+.subtitle {
+	margin-bottom: 50px;
+
+	font-size: 36px;
+	line-height: 1.17;
+	text-align: center;
+	letter-spacing: 0.03em;
+}
+
+// Список соц-мереж
+.soc-list {
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+}
+
+.soc-list__link {
+	display: flex;
+	width: 44px;
+	height: 44px;
+	justify-content: center;
+	align-items: center;
+
+	border-radius: 50%;
+	transition: background-color $transition;
+
+	&:hover,
+	&:focus {
+		background-color: $accent-cl;
+	}
+}
+
+.soc-list__icon {
+	transition: fill $transition;
+
+	.soc-list__link:hover &,
+	.soc-list__link:focus & {
+		fill: #ffffff;
+	}
+}
+
+.soc-list__icon--light-theam {
+	fill: $soc-list__icon--light-theam;
+}
+
+.soc-list__icon--dark-theam {
+	fill: #ffffff;
+}
+
+.soc-list__link--dark-theam {
+	background-color: $soc-list__link--dark-theam;
+}
+
+// Візуально сховати
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
