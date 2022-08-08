@@ -50,18 +50,18 @@
 		position: relative;
 
 		color: $accent-cl;
-	}
 
-	&--current::after {
-		position: absolute;
-		bottom: -1px;
-		display: block;
-		content: '';
-		width: 100%;
-		height: 4px;
+		&::after {
+			position: absolute;
+			bottom: -1px;
+			display: block;
+			content: '';
+			width: 100%;
+			height: 4px;
 
-		background-color: $accent-cl;
-		border-radius: 2px;
+			background-color: $accent-cl;
+			border-radius: 2px;
+		}
 	}
 }
 
