@@ -100,10 +100,10 @@
 		border: 1px solid $accent-cl;
 		border-radius: 4px;
 	}
-}
 
-.modal__input::placeholder {
-	user-select: none;
+	&::placeholder {
+		user-select: none;
+	}
 }
 
 .modal__label {
@@ -154,23 +154,27 @@
 	resize: none;
 	height: 120px;
 	padding: 12px 16px;
-}
 
-.modal__input--comment::placeholder {
-	font-size: 12px;
-	line-height: calc(14 / 12);
-	letter-spacing: 0.01em;
-	color: rgba(117, 117, 117, 0.5);
-	transition: color $transition;
-}
+	&::placeholder {
+		font-size: 12px;
+		line-height: calc(14 / 12);
+		letter-spacing: 0.01em;
+		color: rgba(117, 117, 117, 0.5);
+		transition: color $transition;
+	}
 
-.modal__input--comment:not(:focus)::placeholder {
-	color: transparent;
+	&:not(:focus)::placeholder {
+		color: transparent;
+	}
 }
 
 .modal__label--comment {
 	top: 16px;
 	left: 16px;
+}
+
+.modal__checkbox {
+	@extend %visually-hidden;
 }
 
 .modal__wrap-agree {
@@ -187,24 +191,24 @@
 .modal__icon-check {
 	opacity: 0;
 	transition: opacity $transition;
-}
 
-.modal__checkbox:checked+.modal__agree-icon>.modal__icon-check {
-	opacity: 1;
+	.modal__checkbox:checked+.modal__agree-icon>& {
+		opacity: 1;
+	}
 }
 
 .modal__icon-uncheck {
 	opacity: 1;
 	transition: opacity $transition, fill $transition;
-}
 
-.modal__checkbox:checked+.modal__agree-icon>.modal__icon-uncheck {
-	opacity: 0;
-}
+	.modal__checkbox:checked+.modal__agree-icon>& {
+		opacity: 0;
+	}
 
-.modal__checkbox:hover+.modal__agree-icon .modal__icon-uncheck,
-.modal__checkbox:focus+.modal__agree-icon .modal__icon-uncheck {
-	fill: $accent-cl;
+	.modal__checkbox:hover+.modal__agree-icon &,
+	.modal__checkbox:focus+.modal__agree-icon & {
+		fill: $accent-cl;
+	}
 }
 
 .modal__checkbox-text {

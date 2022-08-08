@@ -72,6 +72,10 @@
 	&:focus {
 		background-color: $accent-cl;
 	}
+
+	&--dark-theam {
+		background-color: $soc-list__link--dark-theam;
+	}
 }
 
 .soc-list__icon {
@@ -81,22 +85,18 @@
 	.soc-list__link:focus & {
 		fill: #ffffff;
 	}
-}
 
-.soc-list__icon--light-theam {
-	fill: $soc-list__icon--light-theam;
-}
+	&--light-theam {
+		fill: $soc-list__icon--light-theam;
+	}
 
-.soc-list__icon--dark-theam {
-	fill: #ffffff;
-}
-
-.soc-list__link--dark-theam {
-	background-color: $soc-list__link--dark-theam;
+	&--dark-theam {
+		fill: #ffffff;
+	}
 }
 
 // Візуально сховати
-.visually-hidden {
+%visually-hidden {
 	position: absolute;
 	width: 1px;
 	height: 1px;

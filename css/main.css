@@ -107,6 +107,9 @@ address {
 .soc-list__link:hover, .soc-list__link:focus {
   background-color: #2196F3;
 }
+.soc-list__link--dark-theam {
+  background-color: #44454E;
+}
 
 .soc-list__icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -114,20 +117,14 @@ address {
 .soc-list__link:hover .soc-list__icon, .soc-list__link:focus .soc-list__icon {
   fill: #ffffff;
 }
-
 .soc-list__icon--light-theam {
   fill: #AFB1B8;
 }
-
 .soc-list__icon--dark-theam {
   fill: #ffffff;
 }
 
-.soc-list__link--dark-theam {
-  background-color: #44454E;
-}
-
-.visually-hidden {
+.modal__checkbox, .portfolio__title {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -167,6 +164,7 @@ address {
 .header__list {
   display: flex;
   align-items: center;
+  gap: 50px;
 }
 
 .header__item {
@@ -174,10 +172,6 @@ address {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-}
-
-.header__item:not(:last-child) {
-  margin-right: 50px;
 }
 
 .header__link {
@@ -189,12 +183,10 @@ address {
 .header__link:hover, .header__link:focus {
   color: #2196F3;
 }
-
 .header__link--current {
   position: relative;
   color: #2196F3;
 }
-
 .header__link--current::after {
   position: absolute;
   bottom: -1px;
@@ -209,10 +201,7 @@ address {
 .contacs {
   display: flex;
   margin-left: auto;
-}
-
-.contacs__item:not(:last-child) {
-  margin-right: 50px;
+  gap: 50px;
 }
 
 .contacs__link {
@@ -305,14 +294,11 @@ address {
 
 .work__list {
   display: flex;
+  gap: 30px;
 }
 
 .work__item {
   position: relative;
-}
-
-.work__item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .work__overlay {
@@ -568,21 +554,18 @@ address {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 }
-
 .subscribe-form__input::-moz-placeholder {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   -moz-user-select: none;
        user-select: none;
 }
-
 .subscribe-form__input:-ms-input-placeholder {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   -ms-user-select: none;
       user-select: none;
 }
-
 .subscribe-form__input::placeholder {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
@@ -694,17 +677,14 @@ address {
   border: 1px solid #2196F3;
   border-radius: 4px;
 }
-
 .modal__input::-moz-placeholder {
   -moz-user-select: none;
        user-select: none;
 }
-
 .modal__input:-ms-input-placeholder {
   -ms-user-select: none;
       user-select: none;
 }
-
 .modal__input::placeholder {
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -769,7 +749,6 @@ address {
   height: 120px;
   padding: 12px 16px;
 }
-
 .modal__input--comment::-moz-placeholder {
   font-size: 12px;
   line-height: 1.1666666667;
@@ -778,7 +757,6 @@ address {
   -moz-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .modal__input--comment:-ms-input-placeholder {
   font-size: 12px;
   line-height: 1.1666666667;
@@ -787,7 +765,6 @@ address {
   -ms-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .modal__input--comment::placeholder {
   font-size: 12px;
   line-height: 1.1666666667;
@@ -795,15 +772,12 @@ address {
   color: rgba(117, 117, 117, 0.5);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .modal__input--comment:not(:focus)::-moz-placeholder {
   color: transparent;
 }
-
 .modal__input--comment:not(:focus):-ms-input-placeholder {
   color: transparent;
 }
-
 .modal__input--comment:not(:focus)::placeholder {
   color: transparent;
 }
@@ -828,7 +802,6 @@ address {
   opacity: 0;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .modal__checkbox:checked + .modal__agree-icon > .modal__icon-check {
   opacity: 1;
 }
@@ -837,13 +810,10 @@ address {
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .modal__checkbox:checked + .modal__agree-icon > .modal__icon-uncheck {
   opacity: 0;
 }
-
-.modal__checkbox:hover + .modal__agree-icon .modal__icon-uncheck,
-.modal__checkbox:focus + .modal__agree-icon .modal__icon-uncheck {
+.modal__checkbox:hover + .modal__agree-icon .modal__icon-uncheck, .modal__checkbox:focus + .modal__agree-icon .modal__icon-uncheck {
   fill: #2196F3;
 }
 

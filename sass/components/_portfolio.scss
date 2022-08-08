@@ -3,6 +3,10 @@
 	padding: 94px 0;
 }
 
+.portfolio__title {
+	@extend %visually-hidden;
+}
+
 .filter {
 	display: flex;
 	margin-bottom: 50px;
