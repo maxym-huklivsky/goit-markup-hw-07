@@ -418,10 +418,10 @@ address {
 }
 
 .header__item {
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  font-weight: 500;
 }
 
 .header__link {
